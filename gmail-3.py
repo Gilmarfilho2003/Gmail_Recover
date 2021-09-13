@@ -57,9 +57,8 @@ print('''
 instance = GmailBruteForce()
 
 do = input('''
-		Choose any number ?
+		escolhe o unico numero
 		1 - Gmail.com
-		2 - nulo 
 		
 		==> ''')
 
