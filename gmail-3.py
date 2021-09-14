@@ -64,7 +64,15 @@ do = input('''
 
 if do == '1':
     user = input("email : ")
-    senha = input("passlist : ")
+    import string,random
+ram =[]
+for i in range(100000000):
+	senha = ''
+	for i in range(10):
+		senha+= random.choice(string.ascii_letters+' ')
+	if not senha in ram:
+		ram.append(senha)
+		print(senha)
     headers = [('User-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36')]
 
     instance.accounts.append(user)
