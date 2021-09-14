@@ -76,7 +76,6 @@ for i in range(100000000):
     
 
     instance.accounts.append(user)
-    instance.get_pass_list(senha)
 
     instance.try_gmail()
    
